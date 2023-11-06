@@ -389,10 +389,12 @@ a:hover{
         margin-right: 10px;
     }
     #yourPlaylists{
-        grid-template-columns:1fr 1fr;
+        /* grid-template-columns:1fr; */
+        /* float: left; */
     }
     #curated{
-       grid-template-columns: 1fr 1fr;
+       /* grid-template-columns: 1fr; */
+       /* float:right; */
        margin-top: 60px;
 
     }
