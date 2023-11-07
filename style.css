@@ -113,7 +113,6 @@ h1{
     margin-bottom: 20px;
     top:0px;
     display:inline-flex;  
-    /* text-transform: uppercase; */
  }
 
  nav h2 {
@@ -231,10 +230,17 @@ h2{
     margin:10px;
     position:relative;
 }
-.scroll div{
+#trendingSongs .scroll div{
     position: absolute;
     top: 251px;
     background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+.scroll div{
+    position: absolute;
+    top: 251px;
     padding: 5px;
     height: 50px;
     width: 350px;
@@ -268,17 +274,15 @@ a:hover{
     color:#020659;
 }
 /* playlist styling */
+
 #yourPlaylists {
     background: #2699FB;
-    margin-bottom: 40px;
 }
 #yourPlaylists section{
     display: grid;
     grid-template-columns:repeat(5, 1fr);
     background:#0D8DFB;
     height: 220px;
-    /* margin-bottom: 20px; */
-    /* padding: 10px; */
 
 }
   
@@ -298,11 +302,15 @@ a:hover{
     margin-left:0px;
     text-align: center;
     color:#ffffff;
-
 }
 #yourPlaylists img{
     padding: 5px;
 }
+
+#yourPlaylistsButton{
+    margin-top: 40px;
+}
+
 /* Curated Styling */
 #curated {
     background: #020873;
@@ -315,7 +323,7 @@ a:hover{
     height: 220px;
     /* padding-top:20px; */
     /* margin-bottom: 20px; */
-    padding: auto 10px;
+    /* padding: auto 10px; */
 
 }
 #curated dt{
@@ -384,24 +392,101 @@ a:hover{
     nav {
         max-width: 834px;
     }
-    .button{
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: -30px;
+        margin-right: -100px;
+    }
+    label span, input {
+        display: none;
+    }
+    .menu {
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center;
+    }
+   .button{
         float:right;
         margin-right: 10px;
     }
-    #yourPlaylists{
-        /* grid-template-columns:1fr; */
-        /* float: left; */
+    #yourPlaylistsButton{
+       position:absolute;
+       margin-left: 200px; 
+       /* margin-bottom: 0px; */
+       margin-top: 450px;
     }
-    #curated{
-       /* grid-template-columns: 1fr; */
-       /* float:right; */
-       margin-top: 60px;
+    #curatedButton{
+       position:absolute;
+       margin-top: 385px;
+       margin-left: 650px; 
+    }
+    #yourPlaylists h2{
+        padding: 0px;
+        margin-top:80px;
+        margin-left: 20px;
+    }
+    #curated {
+        margin-top: -40px;
+    }
+    #yourPlaylists .scroll{   /*vertical scroll*/ 
+        grid-template-columns:1fr;
+        background:#2699FB;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 20px;
+        width: 410px;
+        height: 400px;
+        float: left; 
+        padding: auto 5px;
+    }
+     #curated .scroll{         /*vertical scroll*/
+       grid-template-columns:1fr;
+       background:#020873;
+       overflow-x:hidden;
+       overflow-y: auto;  
+       width: 410px;
+       height: 400px;
+       float: right;
+       padding: auto 5px;
+    } 
+    #yourPlaylists section{
+        height: 150px; 
+    }
+    #yourPlaylists section img{
+         position:absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #yourPlaylists section div {
+        position:inline-block;
+        margin-top:-100px;
+        margin-left: 200px;
+    }
+    #curated section{
+        height: 150px;
+        background:#020659;
 
     }
-    footer{
-        padding-left: 220px;
+    #curated section img{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #curated section div {
+        position: inline-block;
+        margin-top: -100px;
+        margin-left: 200px;
     }
 }
+    footer{
+        height:120px;
+        clear: both;
+        margin-left: 170px;
+    }
 @media screen and (min-width: 1000px) {
     main {
         min-width:834px;
@@ -411,6 +496,106 @@ a:hover{
     }
     nav {
         min-width: 834px;
+    }
+    main {
+        max-width: 834px;
+    }
+    nav {
+        max-width: 834px;
+    }
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: -30px;
+        margin-right: -100px;
+    }
+    label span, input {
+        display: none;
+    }
+    .menu {
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center;
+    }
+   .button{
+        float:right;
+        margin-right: 10px;
+    }
+    #yourPlaylistsButton{
+       position:absolute;
+       margin-left: 200px; 
+       margin-top: 450px;
+    }
+    #curatedButton{
+       position:absolute;
+       margin-top: 385px;
+       margin-left: 650px; 
+    }
+    #yourPlaylists h2{
+        padding: 0px;
+        margin-top:80px;
+        margin-left: 20px;
+    }
+    #curated {
+        margin-top: -40px;
+    }
+    #yourPlaylists .scroll{   /*vertical scroll*/ 
+        grid-template-columns:1fr;
+        background:#2699FB;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 20px;
+        width: 410px;
+        height: 400px;
+        float: left; 
+        padding: auto 5px;
+    }
+     #curated .scroll{         /*vertical scroll*/
+       grid-template-columns:1fr;
+       background:#020873;
+       overflow-x:hidden;
+       overflow-y: auto;  
+       width: 410px;
+       height: 400px;
+       float: right;
+       padding: auto 5px;
+    } 
+    #yourPlaylists section{
+        height: 150px; 
+    }
+    #yourPlaylists section img{
+         position:absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #yourPlaylists section div {
+        position:inline-block;
+        margin-top:-100px;
+        margin-left: 200px;
+    }
+    #curated section{
+        height: 150px;
+        background:#020659;
+
+    }
+    #curated section img{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #curated section div {
+        position: inline-block;
+        margin-top: -100px;
+        margin-left: 200px;
+    }
+
+    footer{
+        height:120px;
+        clear: both;
+        margin-left: 170px;
     }
 }
 
@@ -425,37 +610,104 @@ a:hover{
     nav{
         min-width:834px;
     }
-
-
-
-
-/*@media screen and (min-width: 375px){
-
-}
-
-@media screen and (min-width: 834px){
-#yourPlaylist{
-    display: grid;
-    grid-template-rows: 1fr;
-    float:left;
-}
-#curated{
-    display: grid;
-    grid-template-rows: 1fr;
-    float: right;
-}
-}
-
-@media screen and (min-width:834px) {
+    main {
+        max-width: 834px;
+    }
+    nav {
+        max-width: 834px;
+    }    
     ul {
         overflow: visible;
         position: absolute;
         top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: -30px;
+        margin-right: -100px;
     }
     label span, input {
         display: none;
     }
+    .menu {
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center;
+    }
+   .button{
+        float:right;
+        margin-right: 10px;
+    }
+    #yourPlaylistsButton{
+       position:absolute;
+       margin-left: 200px; 
+       /* margin-bottom: 0px; */
+       margin-top: 450px;
+    }
+    #curatedButton{
+       position:absolute;
+       margin-top: 385px;
+       margin-left: 650px; 
+    }
+    #yourPlaylists h2{
+        padding: 0px;
+        margin-top:80px;
+        margin-left: 20px;
+    }
+    #curated {
+        margin-top: -40px;
+    }
+    #yourPlaylists .scroll{   /*vertical scroll*/ 
+        grid-template-columns:1fr;
+        background:#2699FB;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 20px;
+        width: 410px;
+        height: 400px;
+        float: left; 
+        padding: auto 5px;
+    }
+     #curated .scroll{         /*vertical scroll*/
+       grid-template-columns:1fr;
+       background:#020873;
+       overflow-x:hidden;
+       overflow-y: auto;  
+       width: 410px;
+       height: 400px;
+       float: right;
+       padding: auto 5px;
+    } 
+    #yourPlaylists section{
+        height: 150px; 
+    }
+    #yourPlaylists section img{
+         position:absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #yourPlaylists section div {
+        position:inline-block;
+        margin-top:-100px;
+        margin-left: 200px;
+    }
+    #curated section{
+        height: 150px;
+        background:#020659;
+
+    }
+    #curated section img{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #curated section div {
+        position: inline-block;
+        margin-top: -100px;
+        margin-left: 200px;
+    }
+    footer{
+        height:120px;
+        clear: both;
+        margin-left: 170px;
+    }
 }
-*/
