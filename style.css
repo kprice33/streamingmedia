@@ -182,7 +182,6 @@ input:checked ~ label span:after {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-*/
 /* END HAMBUGER MENU */
 
  /*  main styling */
@@ -261,7 +260,7 @@ audio {
 /* END SCROLL */
 /* link button styling */
 .button {
-    position: inline-block;
+    /* position: inline-block; */
     background:#590242;
     padding: 10px;
     color:#ffffff;
@@ -321,9 +320,6 @@ a:hover{
     grid-template-columns:repeat(5, 1fr);
     background:#020659;
     height: 220px;
-    /* padding-top:20px; */
-    /* margin-bottom: 20px; */
-    /* padding: auto 10px; */
 
 }
 #curated dt{
@@ -441,7 +437,8 @@ a:hover{
         width: 410px;
         height: 400px;
         float: left; 
-        padding: auto 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
      #curated .scroll{         /*vertical scroll*/
        grid-template-columns:1fr;
@@ -451,7 +448,8 @@ a:hover{
        width: 410px;
        height: 400px;
        float: right;
-       padding: auto 5px;
+       padding-left:5px;    /*changed*/
+       padding-right: 5px;
     } 
     #yourPlaylists section{
         height: 150px; 
@@ -462,7 +460,6 @@ a:hover{
         margin-left: 10px;
     }
     #yourPlaylists section div {
-        position:inline-block;
         margin-top:-100px;
         margin-left: 200px;
     }
@@ -477,7 +474,6 @@ a:hover{
         margin-left: 10px;
     }
     #curated section div {
-        position: inline-block;
         margin-top: -100px;
         margin-left: 200px;
     }
@@ -551,7 +547,8 @@ a:hover{
         width: 410px;
         height: 400px;
         float: left; 
-        padding: auto 5px;
+        padding-left:5px;
+        padding-right: 5px;
     }
      #curated .scroll{         /*vertical scroll*/
        grid-template-columns:1fr;
@@ -561,7 +558,8 @@ a:hover{
        width: 410px;
        height: 400px;
        float: right;
-       padding: auto 5px;
+       padding-left: 5px;
+       padding-right: 5px;
     } 
     #yourPlaylists section{
         height: 150px; 
@@ -572,7 +570,6 @@ a:hover{
         margin-left: 10px;
     }
     #yourPlaylists section div {
-        position:inline-block;
         margin-top:-100px;
         margin-left: 200px;
     }
@@ -587,7 +584,6 @@ a:hover{
         margin-left: 10px;
     }
     #curated section div {
-        position: inline-block;
         margin-top: -100px;
         margin-left: 200px;
     }
@@ -640,7 +636,6 @@ a:hover{
     #yourPlaylistsButton{
        position:absolute;
        margin-left: 200px; 
-       /* margin-bottom: 0px; */
        margin-top: 450px;
     }
     #curatedButton{
@@ -665,7 +660,8 @@ a:hover{
         width: 410px;
         height: 400px;
         float: left; 
-        padding: auto 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
      #curated .scroll{         /*vertical scroll*/
        grid-template-columns:1fr;
@@ -675,7 +671,8 @@ a:hover{
        width: 410px;
        height: 400px;
        float: right;
-       padding: auto 5px;
+       padding-left:5px;
+       padding-right: 5px;
     } 
     #yourPlaylists section{
         height: 150px; 
@@ -686,7 +683,6 @@ a:hover{
         margin-left: 10px;
     }
     #yourPlaylists section div {
-        position:inline-block;
         margin-top:-100px;
         margin-left: 200px;
     }
@@ -701,7 +697,6 @@ a:hover{
         margin-left: 10px;
     }
     #curated section div {
-        position: inline-block;
         margin-top: -100px;
         margin-left: 200px;
     }
